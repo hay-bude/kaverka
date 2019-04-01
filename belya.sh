@@ -25,8 +25,8 @@ sudo dos2unix 90.sh
 sudo dos2unix 40.sh
 
 touch /tmp/at.txt
-echo 'sudo reboot -f' >> /tmp/at.txt
-at now + 8 hours < /tmp/at.txt
-echo -e 'Restart job specified'
+chmod +x /tmp/at.txt
+echo 'sudo systemctl reboot -f' >> /tmp/at.txt
+sudo at now + 8 hours < /tmp/at.txt
 
 sudo ./time1.sh
